@@ -16,7 +16,7 @@ if meta_description:
 
 
 nltk.download('punkt_tab')
-dados_do_site = str(soup.get_text()) # TEM QUE ARRUMAR UMA FORMA DE JOGAR O RESULTADO DA PARTE DE CIMA AQUI !!
+dados_do_site = str(soup.get_text())
 
 palavras = nltk.word_tokenize(dados_do_site)
 frequencia = FreqDist(palavras)
